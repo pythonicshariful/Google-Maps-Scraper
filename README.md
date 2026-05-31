@@ -18,7 +18,7 @@ A powerful, robust, and interactive two-phase Selenium scraping automation tool.
 * **🌐 Phase 2 Deep Email Harvesting**:
   * Crawls the business homepage and automatically discovers subpages using intelligent keyword matching (e.g., `contact`, `about`, `us`, `info`, `reach`).
   * Extracts emails using standard patterns and validates them to eliminate placeholders, assets, and third-party developer domain noise (e.g., Wix, Sentry, bootstrap, jquery, googleapis, `.png`, `.jpg`, `.pdf`).
-* **💾 Real-time Excel Dump**: Saves scraped records continuously after each listing to `mwanza_data.xlsx`, ensuring zero data loss if the scraping session is interrupted.
+* **💾 Real-time Excel Dump**: Saves scraped records continuously after each listing to `exported_data.xlsx`, ensuring zero data loss if the scraping session is interrupted.
 * **🔧 Dynamic Web Driver Setup**: Utilizes `webdriver-manager` to automatically download and configure the compatible Chrome Driver version.
 
 ---
@@ -105,14 +105,14 @@ Before running the scraper, ensure you have the following:
    * Once switched, press **`Enter`** in the terminal to continue.
 
 4. **Observe & Relax**:
-   * The scraper will scroll the feed, collect the listings, visit each business page, extract information, right-click the canvas for coordinates, and save to `mwanza_data.xlsx` dynamically.
+   * The scraper will scroll the feed, collect the listings, visit each business page, extract information, right-click the canvas for coordinates, and save to `exported_data.xlsx` dynamically.
    * During **Phase 2**, the scraper will visit the retrieved websites, inspect the pages for contact information, extract emails, filter out noise, and append them directly to the Excel spreadsheet.
 
 ---
 
 ## 📊 Extracted Data Fields
 
-The exported Excel file (`mwanza_data.xlsx`) includes the following structured columns:
+The exported Excel file (`exported_data.xlsx`) includes the following structured columns:
 
 | Column Name | Description | Example |
 |---|---|---|
